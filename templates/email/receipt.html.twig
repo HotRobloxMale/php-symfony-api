@@ -1,0 +1,15 @@
+{# templates/email/receipt.html.twig #}
+
+<h1>Receipt for your purchase</h1>
+
+{% for item in items %}
+    <p>
+        Item Name: {{ item.item.getItemName() }}<br/>
+        Quantity: {{ item.quantity }}<br/>
+        Item Price: {{ item.price }}<br/>
+        Discounted Price: {{ item.discounted_price }}<br/>
+        Total Price: {{ item.total_price }}<br/>
+    </p>
+{% endfor %}
+
+<p><strong>Total summary: {{ total_summary }}</strong></p>

@@ -1,0 +1,22 @@
+App\Entity\Users:
+  properties:
+    id:
+      type: integer
+      readOnly: true
+      example: 1
+    login:
+      type: string
+      example: login
+    name:
+      type: string
+      example: name
+    email:
+      type: string
+      example: email
+    surname:
+      type: string
+      example: surname
+    group:
+      type: string
+      nullable: true
+      example: 'example-group'

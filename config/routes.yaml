@@ -1,0 +1,6 @@
+# Default route for the controllers
+
+api:
+    resource: .
+    type: api_platform
+    prefix: /api

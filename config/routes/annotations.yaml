@@ -1,0 +1,25 @@
+# config/routes/annotations.yaml
+app_orders_single:
+  path: /api/orders/byid/{id}
+  methods: GET
+  controller: App\Controller\OrdersController::getOrder
+
+app_orders_multi:
+  path: /api/orders/byuser/{id}
+  methods: GET
+  controller: App\Controller\OrdersController::getOrders
+
+app_basket_get:
+    path: /api/basket/get/{id}
+    methods: GET
+    controller: App\Controller\BasketController::getUserBasket
+
+app_basket_add:
+    path: /api/basket/add
+    methods: POST
+    controller: App\Controller\BasketController::addUserBasket
+
+app_basket_buy:
+    path: /api/basket/buy/{id}
+    methods: POST
+    controller: App\Controller\BasketController::buyUserBasket
